@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Arrays y Bucles</h1>
+    <button onclick="diceJugador()">Dice Jugador</button>
+    <button onclick="listaJugadores()">Lista Jugadores</button>
+    <script>
+        let jugadores = ["Vinícius Junior", "Jude Bellingham", "Kylian Mbappé", "Luka Modric", "Federico Valverde"];
+
+        function diceJugador(){
+            let numeroJugador=prompt("Dime el número del jugador");
+            if (numeroJugador<1 ){
+                alert("Número erróneo");
+            }
+            else {
+
+                alert(jugadores[numeroJugador-1]);
+            }
+
+        }
+        function listaJugadores(){
+            let i = 0;
+            while ( i<jugadores.length ){
+                document.writeln( jugadores[i] + "<br>");
+                i=i+1;
+            }
+        }
+    </script>
+</body>
+</html>
