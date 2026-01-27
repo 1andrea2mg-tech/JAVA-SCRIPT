@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operaciones con JS</h1>
+    <button onclick="operaNumeros()">Operar números</button>
+    <script>
+        function operaNumeros(){
+        let a=prompt("Dime un número");
+        if (isNaN(a)) {
+            alert("He dicho un número!");
+            return;
+        }
+
+        let b=prompt ("Dime otro numero");
+        producto = a*b;
+        division = a/b;
+        resta = a-b;
+        suma = Number(a)+Number(b);
+        alert ("El producto de " + a + " por " + b + "es " + producto);
+        alert ("La division de " + a + " entre " + b + "es " + division);
+        alert ("La resta de " + a + " y " + b + " es " + resta);
+        alert ("La suma entre " + a + " y " + b + " es " + suma);
+        }
+        
+    </script>
+</body>
+</html>
